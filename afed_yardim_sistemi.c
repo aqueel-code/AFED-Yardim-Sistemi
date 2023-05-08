@@ -149,6 +149,6 @@ void hakkinda() {
   printf("Bu program Mohamed Ifham Aqueel Imthiyas tarafından tasarlanmıştır.\n");
   printf("İletişim bilgileri: 200504123@ogrenci.harran.edu.tr\n");
   printf("Sürümü: 1.0.0-a.1 (alfa)\n");
-  printf("Yayınlanma date: 11.05.2023\n");
+  printf("Yayınlanma tarih: 11.05.2023\n");
   printf("Amacı: Bu projede, deprem ve sel gibi doğal afetler sırasında insanların yardım talepleri üzerine çalışacağız.\n");
 }
