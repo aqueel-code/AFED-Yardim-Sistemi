@@ -6,6 +6,8 @@
 #include "afed_yardim_sistemi.c"
 
 int main() {
+
+  BannerGoster();
   setlocale(LC_ALL, "");
   int secim;
   menu_goster();
@@ -86,6 +88,9 @@ int main() {
     }
     case 8:
       menu_goster();
+      break;
+    case 9:
+      hakkinda();
       break;
     case 0: {
       printf("Programdan çıkıyor...\n");

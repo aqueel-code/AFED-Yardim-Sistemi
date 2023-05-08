@@ -114,7 +114,7 @@ void yardim_talepleri_listele() {
 }
 
 void menu_goster() {
-  printf(".:: Afetzedeler Yardım Sistemi ::.\n");
+  printf("\n\n");
   printf("1. Afetzedeye ekle\n");
   printf("2. Afetzedeyi güncelle\n");
   printf("3. Afetzedeyi sil\n");
@@ -123,9 +123,32 @@ void menu_goster() {
   printf("6. Afetzedeyi ara\n");
   printf("7. Yardım taleplerini listele\n");
   printf("8. Menusunu goster\n");
+  printf("9. Hakkında\n");
   printf("0. Çıkış");
 }
 
 void hata_mesaji() {
   printf("Hata: Geçersiz seçim.\n");
+}
+
+void BannerGoster() {
+  FILE * fp;
+  char banner[MAX_LENGTH];
+  fp = fopen("ascii.txt", "r");
+  if (fp == NULL) {
+    printf("Dosya açılırken hata oluştu\n");
+    return;
+  }
+  while (fgets(banner, MAX_LENGTH, fp) != NULL) {
+    printf("%s", banner);
+  }
+  fclose(fp);
+}
+
+void hakkinda() {
+  printf("Bu program Mohamed Ifham Aqueel Imthiyas tarafından tasarlanmıştır.\n");
+  printf("İletişim bilgileri: 200504123@ogrenci.harran.edu.tr\n");
+  printf("Sürümü: 1.0.0-a.1 (alfa)\n");
+  printf("Yayınlanma date: 11.05.2023\n");
+  printf("Amacı: Bu projede, deprem ve sel gibi doğal afetler sırasında insanların yardım talepleri üzerine çalışacağız.\n");
 }
