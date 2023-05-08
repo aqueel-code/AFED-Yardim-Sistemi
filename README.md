@@ -1,6 +1,6 @@
 ## AFED Yardım Sistemi
 
-AFED Yardım Sistemi is a command-line program written in the C programming language to manage and process requests for help from individuals or organizations.
+Bu projede, deprem ve sel gibi doğal afetler sırasında insanların yardım talepleri üzerine çalışacağız.
 
 ### Installation
 
